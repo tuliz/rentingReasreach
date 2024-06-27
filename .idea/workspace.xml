@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d4d6629-83df-46ed-870b-6676a11fc436" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rentingResearchDataAutomation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="2d4d6629-83df-46ed-870b-6676a11fc436" name="Changes" comment="first commit. get the HTML code of the renting site with GET request and parse the data with beautiful soup 4.">
+      <change afterPath="$PROJECT_DIR$/formhandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rentingdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.formhandler.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -61,6 +59,19 @@
       <option name="presentableId" value="Default" />
       <updated>1719487192176</updated>
     </task>
+    <task id="LOCAL‎-00001" summary="first commit. get the HTML code of the renting site with GET request and parse the data with beautiful soup 4.">
+      <option name="closed" value="true" />
+      <created>1719492018018</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1719492018018</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit. get the HTML code of the renting site with GET request and parse the data with beautiful soup 4." />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit. get the HTML code of the renting site with GET request and parse the data with beautiful soup 4." />
   </component>
 </project>

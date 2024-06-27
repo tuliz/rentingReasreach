@@ -1,27 +1,22 @@
 import requests
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+from rentingdata import RentingData
+from formhandler import FormHandler
 
 form_url = 'https://forms.gle/RW73kkXaivbHmv7H8'
 renting_url = 'https://appbrewery.github.io/Zillow-Clone/'
 
+# Get the HTML code from the renting website
 response = requests.get(url=renting_url)
 response.raise_for_status()
 data = response.text
 
-soup = BeautifulSoup(data, 'html.parser')
+# Send the data of the HTML and send to parse it and extract data from it
+renting_data_handler = RentingData(data=data)
+renting_data_handler.parse_data()
 
-property_links = soup.find_all(name='a', class_='property-card-link')
-property_data_list = soup.find_all(name='div', class_= 'StyledPropertyCardDataWrapper')
+# Send the Data of the rentings exracted and send it to form
+form_handler = FormHandler()
+form_handler.send_data_to_form(form_url, renting_data_handler.proprties_data)
 
 
-proprties_data = []
-for property in property_data_list:
-    text = property.getText().strip().split('\n')
-    address = text[0].split(',')[0]
-    price = text[6].split('$')[1].split('+')[0]
-    new_data = {'address':address, 'price':price}
-    proprties_data.append(new_data)
 
-print(proprties_data)
